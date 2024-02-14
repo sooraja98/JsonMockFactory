@@ -135,7 +135,6 @@ saveRandomUsers(100, 'users.json');
 ```
 
 the json format of users.json 
-```
 [
   {
     "id": 1,
@@ -158,7 +157,7 @@ the json format of users.json
   }
 ]
 
-```
+
 Usage of the saveRandomProducts function.
 
 
@@ -172,7 +171,6 @@ saveRandomProducts(200, 'products.json');
 The JSON format of product.json varies according to the product.
 
 
-```
 User
 [
   {
@@ -399,7 +397,6 @@ User
     "image": "https://www.telegraph.co.uk/content/dam/recommended/2019/05/10/Google-Pixel-Slate_Best-tablets-secondary_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwfSVWeZ_vEN7c6bHu2jJnT8.png"
   }
 ]
-```
 
 
 
