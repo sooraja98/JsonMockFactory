@@ -16,37 +16,40 @@ yarn add json-mock-factory
 json-mock-factory provides a suite of functions to generate mock data for user profiles and product details. Here's how to use them:
 
 Users
-Generate and manipulate user-related data with the following functions:
 
-saveRandomUsers(numUsers, filePath): Generates and saves numUsers unique random user profiles to the specified filePath.
 
-generateRandomEmail(): Generates a single random email address.
 
-generateRandomNames(): Generates a single random name.
+1)Generate and manipulate user-related data with the following functions:
 
-generateRandomCompanyName(): Generates a single random company name.
+2)saveRandomUsers(numUsers, filePath): Generates and saves numUsers unique random user profiles to the specified filePath.
 
-generateRandomNationality(): Generates a single random nationality.
+3)generateRandomEmail(): Generates a single random email address.
 
-getDesignation(companyName): Gets a company designation based on the provided companyName.
+4)generateRandomNames(): Generates a single random name.
 
-getRandomCompanyDesignation(): Gets a random company designation.
+5)generateRandomCompanyName(): Generates a single random company name.
 
-getSalary(designation, experience): Gets a salary based on the provided designation and experience.
+6)generateRandomNationality(): Generates a single random nationality.
 
-getRandomSalary(): Gets a random salary.
+7)getDesignation(companyName): Gets a company designation based on the provided companyName.
 
-getRandomExperience(): Gets a random experience level.
+8)getRandomCompanyDesignation(): Gets a random company designation.
 
-generateRandomAddress(): Generates a single random address.
+9)getSalary(designation, experience): Gets a salary based on the provided designation and experience.
 
-getRandomStreetName(): Gets a random street name.
+10)getRandomSalary(): Gets a random salary.
 
-getRandomCityName(): Gets a random city name.
+11)getRandomExperience(): Gets a random experience level.
 
-getRandomState(): Gets a random state name.
+12)generateRandomAddress(): Generates a single random address.
 
-getRandomZipCode(): Gets a random ZIP code.
+13)getRandomStreetName(): Gets a random street name.
+
+14)getRandomCityName(): Gets a random city name.
+
+15)getRandomState(): Gets a random state name.
+
+16)getRandomZipCode(): Gets a random ZIP code.
 
 ```javascript 
 const { saveRandomUsers, generateRandomEmail, generateRandomNames, generateRandomCompanyName, generateRandomNationality, getDesignation, getRandomCompanyDesignation, getSalary, getRandomSalary, getRandomExperience, generateRandomAddress, getRandomStreetName, getRandomCityName, getRandomState, getRandomZipCode } = require('json-mock-factory');
