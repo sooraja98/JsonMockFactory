@@ -1,0 +1,58 @@
+
+const getProductDescription = (productName) => {
+    const descriptions = {
+        "T-shirt": "A classic cotton t-shirt for everyday wear.",
+        "Jeans": "Comfortable denim jeans with a relaxed fit.",
+        "Sneakers": "Stylish sneakers for casual and athletic wear.",
+        "Backpack": "Durable backpack with multiple compartments for organization.",
+        "Watch": "Sleek wristwatch with a stainless steel band.",
+        "Headphones": "Wireless headphones with noise-cancelling technology.",
+        "Laptop": "High-performance laptop for work and entertainment.",
+        "Smartphone": "Latest smartphone with advanced features.",
+        "Gaming Console": "Next-gen gaming console for immersive gaming experiences.",
+        "Camera": "Professional-grade camera for capturing memories.",
+        "Sunglasses": "Fashionable sunglasses to protect your eyes from the sun.",
+        "Dress": "Elegant dress for special occasions.",
+        "Running Shoes": "Comfortable running shoes for jogging and exercise.",
+        "Hoodie": "Warm hoodie for chilly days.",
+        "Sweater": "Cozy sweater to keep you warm in winter.",
+        "Guitar": "Versatile guitar for music enthusiasts.",
+        "Fitness Tracker": "Fitness tracker to monitor your health and workouts.",
+        "Desk Chair": "Ergonomic desk chair for long hours of sitting.",
+        "Coffee Maker": "Convenient coffee maker for brewing your favorite coffee.",
+        "Bluetooth Speaker": "Portable Bluetooth speaker for music on the go.",
+        "External Hard Drive": "Reliable external hard drive for storing data.",
+        "Tablet": "Portable tablet for productivity and entertainment.",
+        "E-reader": "E-reader for reading books and documents.",
+        "Printer": "High-quality printer for printing documents and photos.",
+        "Robot Vacuum": "Efficient robot vacuum for automated cleaning.",
+        "Drone": "Advanced drone for aerial photography and videography.",
+        "Mountain Bike": "Durable mountain bike for off-road adventures.",
+        "Microwave": "Microwave oven for quick and easy cooking.",
+        "Blender": "Powerful blender for making smoothies and shakes.",
+        "Handbag": "Stylish handbag for carrying essentials.",
+        "Jacket": "Fashionable jacket for outdoor activities.",
+        "Skirt": "Versatile skirt for various occasions.",
+        "Hat": "Stylish hat to complement your outfit.",
+        "Sandals": "Comfortable sandals for everyday wear.",
+        "Keyboard": "Ergonomic keyboard for efficient typing.",
+        "Mouse": "Wireless mouse for easy navigation.",
+        "Monitor": "High-resolution monitor for crisp visuals.",
+        "Projector": "Portable projector for presentations and entertainment.",
+        "Vacuum Cleaner": "Powerful vacuum cleaner for thorough cleaning.",
+        "Toaster": "Convenient toaster for quick breakfasts.",
+        "Food Processor": "Versatile food processor for food preparation.",
+        "Electric Kettle": "Quick electric kettle for boiling water.",
+        "Rice Cooker": "Efficient rice cooker for perfectly cooked rice.",
+        "Steam Iron": "Steam iron for wrinkle-free clothes.",
+        "Hair Dryer": "Hair dryer for styling your hair.",
+        "Electric Shaver": "Convenient electric shaver for grooming.",
+        "Steamer": "Efficient garment steamer for removing wrinkles.",
+        "Juicer": "Healthy juicer for fresh fruit and vegetable juices.",
+        "Waffle Maker": "Waffle maker for delicious homemade waffles."
+    };
+
+    return descriptions[productName] || "";
+};
+
+module.exports = getProductDescription

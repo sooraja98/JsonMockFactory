@@ -1,0 +1,55 @@
+
+const getColors = (productName) => {
+    const colorMappings = {
+        "T-shirt": ["Red", "Blue", "Green", "Yellow", "Black", "White"],
+        "Jeans": ["Blue", "Black", "Gray", "Brown", "Navy"],
+        "Dress": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Hoodie": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Sweater": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Jacket": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Skirt": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Sneakers": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Running Shoes": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Sandals": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Backpack": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Watch": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Headphones": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Laptop": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Smartphone": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Gaming Console": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Camera": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Fitness Tracker": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Bluetooth Speaker": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "External Hard Drive": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Tablet": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "E-reader": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Printer": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Handbag": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Keyboard": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Mouse": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Monitor": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Projector": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Coffee Maker": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Robot Vacuum": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Microwave": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Blender": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Vacuum Cleaner": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Toaster": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Food Processor": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Electric Kettle": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Rice Cooker": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Steam Iron": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Hair Dryer": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Electric Shaver": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Steamer": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Juicer": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Waffle Maker": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Guitar": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Desk Chair": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"],
+        "Mountain Bike": ["Red", "Blue", "Green", "Yellow", "Black", "White", "Gray", "Purple", "Orange", "Pink", "Brown", "Navy", "Beige", "Teal"]
+    };
+
+    return colorMappings[productName] || [];
+};
+
+module.exports = getColors;

@@ -1,0 +1,34 @@
+{
+  "dependencies": {},
+  "name": "json-mock-factory",
+  "version": "1.0.1",
+  "description": "This package provides a versatile solution for dynamically generating JSON files populated with customizable user profiles or product details. Ideal for developers needing mock data for testing, prototyping, or demonstration purposes, it simplifies the creation process by allowing the specification of the desired number of entries. Whether you're developing applications requiring user data simulation or e-commerce platforms needing product catalogs, this tool effortlessly crafts accurate, schema-compliant JSON datasets to meet your development needs.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sooraja98/JsonMockFactory.git"
+  },
+  "keywords": [
+    "json-generator",
+    "mock-data",
+    "user-profiles",
+    "product-catalog",
+    "data-simulation",
+    "testing-tools",
+    "prototype-data",
+    "development-tools",
+    "schema-compliant",
+    "e-commerce-data"
+  ],
+  "author": "sooraja98",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sooraja98/JsonMockFactory/issues"
+  },
+  "homepage": "https://github.com/sooraja98/JsonMockFactory#readme"
+}
